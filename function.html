@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+    
+
+    <script>
+        // console.log(6+7);
+        // console.log("hello, world");
+
+        // print(10+12);
+
+        function print(n){
+            console.log(n);
+        }
+
+        function bodyMassIndex(k, m){
+            // functions with side effects
+            // pure functions
+            let answer = k/(m * m);
+
+            return answer;
+        }
+        // let print = (n)=>{
+        //     console.log(n)
+        // }
+
+        // print(23+12);
+
+        // console.log(bodyMassIndex(70, 6));
+
+        // IF STATEMENTS
+        // let condition = prompt("will it rain today? ");
+
+        // if(condition == "yes"){
+        //     console.log("you should hold an umbrella");
+        // }else{
+        //     console.log("It may be sunny and you can hold your screen shade");
+        // }
+
+        
+        
+        let greader = (n) =>{
+            if (n > 69){
+                console.log("Excellent!!!!")
+            } else if( n > 59){
+                console.log("Very good")
+            } else if( n > 49){
+                console.log("Good!")
+            } else if( n >39){
+                console.log("pass")
+            } else{
+                console.log("come back for a resite!!!")
+            }
+
+        }
+
+        // const or let nameOfFunction = (parameter) =>{
+        //     block of code
+        //     return value
+        // }
+
+        let power = (n) =>{
+            return n * n
+        }
+
+
+        let n = prompt("Enter any number: ")
+        // greader(n)
+
+        alert(power(n))
+
+
+    </script>
+</body>
+</html>
