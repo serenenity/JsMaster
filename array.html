@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+                    // [0, 1, 2, 3, 4]
+        let fruit = ["orange", "banana", "apple", "mango", "water mellon"]
+        let even = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+        
+        // console.log(fruit[0])
+       
+        // for(let i = 0; i < 5; i++){
+        //     console.log(fruit[i])
+        // }
+
+        // for(let value of even){
+        //     console.log(value)
+        // }
+        // fruit[2] = ""
+
+        for(let value of fruit){
+            console.log(value)
+        }
+        // ARRAY PROPERTIES
+        // console.log(fruit.length)
+        // console.log(even.lastIndexOf())
+
+        // ARRAY METHODS
+        // pop
+        // fruit.pop()
+        // fruit.push("lemon")
+        // console.log(fruit)
+
+        // fruit.shift()
+        // fruit.unshift("berry")
+        // console.log(fruit)
+
+        let names = ["paulmike", "titi", "philip"]
+        let numbers = ["+2347030058172", "+23481657761", "+234908765432"]
+
+        let search = prompt("Search by name: ")
+
+        for(i = 0; i < names.length; i++){
+            if(names[i] == search){
+                console.log(`Found : ${numbers[i]}`)
+            }
+        }
+
+        // improve the above code by writing a function for it to return not found if the name search is not inside our Array
+        // design a simple todo application that will to take a task for the user and print them out for the user
+        // make a case for todo that are urgent
+
+    </script>
+</body>
+</html>
