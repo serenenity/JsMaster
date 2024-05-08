@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array METHODS</title>
+</head>
+<body>
+    
+    <script>
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        // MAP
+        let doubleNumber = numbers.map(num => num * 2)
+        // console.log(doubleNumber)
+
+        // FILTER
+        let evenNumber = numbers.filter(n => n % 2 == 0)
+        console.log(evenNumber)
+
+        let sum = numbers.reduce((counter, current) => counter + current)
+        console.log(sum)
+
+    </script>
+</body>
+</html>
