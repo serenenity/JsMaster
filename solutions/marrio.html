@@ -15,14 +15,37 @@
         // for(let i = 10; i > 0; i--){
         //     console.log(i)
         // }
-        for(let i = 0; i < 8; i++){
-            for(let j = 8; j > 0; j--){
-                if( j > i){
-                    console.log(" ")
-                }else{
-                    console.log("#")
+        // for(let i = 0; i < 8; i++){
+        //     for(let j = 8; j > 0; j--){
+        //         if( j > i){
+        //             console.log(" ")
+        //         }else{
+        //             console.log("#")
+        //         }
+        //     }
+        // }
+
+        // for(let i = "#######"; i.length > 0; i = i.slice(0, -1)){
+        //     console.log(i);
+        // }
+        const size = 2; // Define the size
+
+        for (let i = 0; i < size; i++) {
+            let output1 = "";
+            let output2 = ""
+            for (let j = size; j >= 0; j--) {
+                if (j > i) {
+                    output1 += " ";
+                } else {
+                    output1 += "#";
+                    output2 += "#"
                 }
             }
+            
+
+        console.log(`${output1}   ${output2}`)
+
+        // output2 += "#";
         }
     </script>
 </body>

@@ -1,10 +1,17 @@
-for(let i = 0; i < 8; i++){
-    for(let j = 8; j > 0; j--){
-        if( j > i){
-            console.log(" ".trim())
-        }else{
-            console.log("#".trim())
+const size = 5; // Define the size
+
+for (let i = 0; i < size; i++) {
+    let output1 = "";
+    let output2 = "";
+    for (let j = size; j >= 0; j--) {
+        if (j > i) {
+            output1 += " ";
+        } else {
+            output1 += "#";
+            output2 += "#";
         }
     }
-    console.log()
+
+    console.log(`${output1}   ${output2}`);
 }
+
