@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+</head>
+<body>
+
+
+    <script>
+        // console.log("hello world");
+        // let run = true
+        // let todo = []
+
+        // while(run){
+        //     let task = prompt("1: to add task, 2: to show tasks, 3: to exit")
+
+        //     if(task == "1"){
+        //         let add = prompt("Enter a task to remeber: ")
+        //         remember(add)
+        //     } else if(task == "2"){
+        //         printTasks()
+        //         // run = false
+        //     } else{
+        //         run = false
+        //     }
+
+        // }
+
+        // function remember(task){
+        //     todo.push(task)
+        // }
+
+        // function printTasks(){
+        //     for(let i of todo){
+        //         console.log(i)
+        //     }
+        // }
+
+        // 1. data structure to store my task
+        // 2. i need to be able to add task to the database
+        // 3. show all tasks
+        // 4. add an urgent task
+        // 5. remove task
+
+        // 1. data structure to store my task
+        let todos = []
+
+        // addTask("visit a friend by 1pm")
+        // addTask("go shopping in the evening")
+        // urgentTask("check out your solution in 5 mins")
+        // // console.log(todos)
+        // printTasks()
+        // removeTask()
+        // printTasks()
+
+        while(true){
+            let rawData = prompt("A : Add a task \nR : Remove a task \nP : Print all tasks \nU : Add urgent task. ")
+            let userFunction = rawData.toUpperCase()
+            
+            let task
+            if(userFunction == "A"){
+                task =  prompt("Please, enter a task")
+                addTask(task)
+            }else if( userFunction == "R"){
+                removeTask()
+            }else if( userFunction == "P"){
+                printTasks()
+            }else if( userFunction == "U"){
+                task =  prompt("Please, enter a task")
+                urgentTask(task)
+            } else{
+                console.log("You have not selected any function.")
+                break
+            }
+        }
+
+        // 2. i need to be able to add task to the database
+        function addTask(task){
+          return  todos.push(task)
+        }
+
+        // 4. add an urgent task
+        function urgentTask(task){
+            return todos.unshift(task)
+        }
+
+        // 5. remove task
+        function removeTask(){
+            todos.shift()
+        }
+        // 3. show all tasks
+        function printTasks(){
+            for( let todo of todos){
+                console.log(todo)
+            }
+        }
+    </script>
+</body>
+</html>

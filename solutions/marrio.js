@@ -1,4 +1,4 @@
-const size = 5; // Define the size
+const size = 2; // Define the size
 
 for (let i = 0; i < size; i++) {
     let output1 = "";
