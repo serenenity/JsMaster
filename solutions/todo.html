@@ -56,18 +56,18 @@
         // printTasks()
 
         while(true){
-            let rawData = prompt("A : Add a task \nR : Remove a task \nP : Print all tasks \nU : Add urgent task. ")
-            let userFunction = rawData.toUpperCase()
-            
+
+            let userFunction = (prompt("A : Add a task \nR : Remove a task \nP : Print all tasks \nU : Add urgent task. ")).toLocaleUpperCase()
+                
             let task
             if(userFunction == "A"){
                 task =  prompt("Please, enter a task")
                 addTask(task)
-            }else if( userFunction == "R"){
+            }else if(userFunction == "R"){
                 removeTask()
-            }else if( userFunction == "P"){
+            }else if(userFunction == "P"){
                 printTasks()
-            }else if( userFunction == "U"){
+            }else if(userFunction == "U"){
                 task =  prompt("Please, enter a task")
                 urgentTask(task)
             } else{
@@ -90,6 +90,7 @@
         function removeTask(){
             todos.shift()
         }
+
         // 3. show all tasks
         function printTasks(){
             for( let todo of todos){

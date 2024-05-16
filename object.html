@@ -33,7 +33,85 @@
             "balance" : 2000000
         }
 
-        console.log(footBallTeam.assistantCoach)
+        // console.log(account["balance"])
+        // console.log(account.number)
+
+        // for(let key in account){
+        //     console.log(key)
+        // }
+
+        // let newAccount = Object.values(account)
+
+        // console.log(newAccount)
+
+        // JSON = Javascript Object notations
+        let book = {
+            title: "Eloquent JavaScript",
+            author: {
+                firstName: "Marijn",
+                lastName: "Haverbeke"
+            },
+            year: 2018
+        };
+
+        book["year"] = 2024
+        book.edition = "4"
+        book.author.firstName = "Titi"
+        book.author.lastName = "Abina"
+        // console.log(book)
+
+        // letterFrequency
+        let letterFrequency = (phrase)=>{
+            let frequency = {}
+
+            for(let letter of phrase){
+                // console.log(letter)
+                if(letter in frequency){
+                    frequency[letter] += 1
+                }else{
+                    frequency[letter] = 1
+                }
+            }
+            return frequency
+        }
+
+        // console.log(letterFrequency("what are we eating tonight"))
+        // ['what', 'are', 'we', 'eating','tonight']
+
+        let wordFrequency = (phrase) =>{
+            let words = phrase.split(" ")
+            let frequency = letterFrequency(words)
+
+           return frequency
+            // console.log(words)
+        }
+
+        // console.log(wordFrequency("what are we eating tonight lala lala"))
+
+        let calculator = {
+            add : function(a, b){
+                    return a + b
+                },
+            subtract : function(a, b){
+                    return a - b
+                },
+            power : function(a){
+                return a * a
+            }
+        }
+
+        console.log(calculator.power(3))
+
+// ASSIGNMENT
+// 1. Add a feature that allows users to be able to count either letters or words from their input
+// 2. have a feature that allows the user to know the total numbers of words in a phrase
+
+
+
+// Task: Add a method to print the book's full details, add a publisher, and update the year to 2020.
+
+        
+        // console.log(wordFrequency("We shall be hosting a code party next week, code is the next oil"))
     </script>
 </body>
 </html>
