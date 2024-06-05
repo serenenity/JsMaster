@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Score Cards</title>
+</head>
+<body>
+
+
+    <script>
+        // 1. record students names and subjects scores =>  use an array or an object
+        // 2. show scores to students based on their names
+
+        // let studentNames = ["Paul", "Michael", "Titi", "Abina"]
+        // let studentScores = [3, 8, 10, 7]
+
+        let studentRecords = {
+            paul : {
+                male : true,
+                math : 8,
+                english : 5
+            },
+            michael : 8,
+            titi : 10,
+            abina : 7
+        }
+
+        let user = prompt("Enter the student name: ")
+        console.log(studentRecords[user])
+
+        // let score = (name)=>{
+        //     for(let i = 0; i < studentNames.length; i++){
+        //         if(user == studentNames[i]){
+        //              return `${studentNames[i]} have a score of ${studentScores[i]}`
+        //         }
+        //     }
+
+        //     return "Student is not found."
+        // }
+
+
+        // let user = prompt("Enter the student name: ")
+
+        // console.log(score(user))
+       
+
+
+    </script>
+</body>
+</html>
